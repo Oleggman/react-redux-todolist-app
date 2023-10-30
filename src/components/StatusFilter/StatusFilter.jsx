@@ -12,7 +12,7 @@ export const StatusFilter = () => {
   const handleFilterChange = filter => dispatch(setFilter(filter));
 
   return (
-    <div>
+    <div  className={css.wrapper}>
       <Button
         selected={filter === statusFilters.all}
         onClick={() => handleFilterChange(statusFilters.all)}
@@ -34,3 +34,4 @@ export const StatusFilter = () => {
     </div>
   );
 };
+
